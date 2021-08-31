@@ -22,3 +22,32 @@ Azure Project
 
 6. Create manual release and deploy. Once the deployment is completed, the backend container should show the terraform state file. Pipeline will be trigger by any push to the repository. Terraform init, validate, plan and apply are part of the release pipeline. 
 
+## WebApp Maven Pipeline ## 
+
+The following pipeline will deploy spring boot app package into Azure WebApp using Java as runtime.
+
+1. Create Azure Devops project and initialize a new repository. 
+
+2. Upload files from "WebApp Mave Pipeline folder"
+
+3. Create service connection for Azure Subscription in projects settings. 
+
+4. Import pipeline from spring-boot-pipeline.yml changing 
+
+5.  import release pipeline from Devops Maven Release json file. "Changing values based on target environment"
+
+6. Create manual release deploy and automatically, the code should push to the WebApp. 
+
+## Docker Maven Pipeline ## 
+
+A docker image was created for the spring boot project.
+
+Container registry to pull Docker image. 
+
+https://acrassessment.azurecr.io 
+username : acrassessment
+Password : unDZbXMkHHm78efvJyqocddJ/DThgWDU
+image : image
+tag : latest 
+
+
