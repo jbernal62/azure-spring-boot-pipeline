@@ -1,0 +1,1 @@
+my_sql_master_password = "Omn1cr0n"
